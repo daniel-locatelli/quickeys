@@ -35,7 +35,7 @@ export class HomeComponent implements AfterViewInit, OnInit {
     this.meta.updateTag({ property: 'twitter:image', content: this.constants.image });
   }
 
-  onWindowResize() {
+  onWindowResize(_: Event) {
     this.screenWidth = window.innerWidth;
   }
 
