@@ -70,6 +70,7 @@ export class BashComponent implements AfterViewInit, OnInit {
     { key: 'grep "text" filename', command: 'Search for text in a file' },
     { key: 'grep "text" .', command: 'Search for text in all files of current directory' },
     { key: 'grep -r "text" .', command: 'Search for text in all files of current directory and subdirectories (recursively)' },
+    { key: 'grep -R --exclude-dir=node_modules "text" /path/to/search', command: 'Search for text in all files of current directory and subdirectories (recursively) excluding node_modules' },
     { key: 'sed', command: 'Stream editor for filtering and transforming text' },
     { key: 'awk', command: 'Pattern scanning and processing language' },
     { key: 'sort', command: 'Sort lines of text files' },
