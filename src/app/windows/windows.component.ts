@@ -4,14 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { windows } from '../constants';
 
 @Component({
-  selector: 'app-windows',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './windows.component.html',
-  styleUrl: './windows.component.css',
-  host: {
-    class: 'shortcuts',
-  },
+    selector: 'app-windows',
+    imports: [CommonModule],
+    templateUrl: './windows.component.html',
+    styleUrl: './windows.component.css',
+    host: {
+        class: 'shortcuts',
+    }
 })
 export class WindowsComponent implements AfterViewInit, OnInit {
 

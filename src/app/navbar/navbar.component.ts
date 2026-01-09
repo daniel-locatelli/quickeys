@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+    selector: 'app-navbar',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
 // This logic is to apply style to the current route icon in the nav bar

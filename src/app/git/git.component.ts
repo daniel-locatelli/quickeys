@@ -4,14 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { git } from '../constants';
 
 @Component({
-  selector: 'app-git',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './git.component.html',
-  styleUrl: './git.component.css',
-  host: {
-    class: 'shortcuts',
-  },
+    selector: 'app-git',
+    imports: [CommonModule],
+    templateUrl: './git.component.html',
+    styleUrl: './git.component.css',
+    host: {
+        class: 'shortcuts',
+    }
 })
 export class GitComponent implements AfterViewInit, OnInit {
   constructor(private title: Title, private meta: Meta, private constants: git) {}

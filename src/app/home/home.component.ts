@@ -4,15 +4,14 @@ import { home } from '../constants';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
-  host: {
-    '(window:resize)': 'onWindowResize($event)',
-    class: 'home',
-  },
+    selector: 'app-home',
+    imports: [CommonModule],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css',
+    host: {
+        '(window:resize)': 'onWindowResize($event)',
+        class: 'home',
+    }
 })
 export class HomeComponent implements AfterViewInit, OnInit {
 

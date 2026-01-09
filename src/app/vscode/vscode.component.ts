@@ -4,14 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { vsCode } from '../constants';
 
 @Component({
-  selector: 'app-vscode',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './vscode.component.html',
-  styleUrl: './vscode.component.css',
-  host: {
-    class: 'shortcuts',
-  },
+    selector: 'app-vscode',
+    imports: [CommonModule],
+    templateUrl: './vscode.component.html',
+    styleUrl: './vscode.component.css',
+    host: {
+        class: 'shortcuts',
+    }
 })
 export class VscodeComponent implements AfterViewInit, OnInit {
 

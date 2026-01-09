@@ -4,14 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { premierePro } from '../constants';
 
 @Component({
-  selector: 'app-premierepro',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './premierepro.component.html',
-  styleUrl: './premierepro.component.css',
-  host: {
-    class: 'shortcuts',
-  },
+    selector: 'app-premierepro',
+    imports: [CommonModule],
+    templateUrl: './premierepro.component.html',
+    styleUrl: './premierepro.component.css',
+    host: {
+        class: 'shortcuts',
+    }
 })
 export class PremiereproComponent implements AfterViewInit, OnInit {
 

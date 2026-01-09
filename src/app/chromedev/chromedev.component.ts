@@ -4,14 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { googleChromeDev } from '../constants';
 
 @Component({
-  selector: 'app-chromedev',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './chromedev.component.html',
-  styleUrl: './chromedev.component.css',
-  host: {
-    class: 'shortcuts',
-  },
+    selector: 'app-chromedev',
+    imports: [CommonModule],
+    templateUrl: './chromedev.component.html',
+    styleUrl: './chromedev.component.css',
+    host: {
+        class: 'shortcuts',
+    }
 })
 export class ChromedevComponent implements AfterViewInit, OnInit {
 

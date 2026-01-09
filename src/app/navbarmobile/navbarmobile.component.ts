@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-navbarmobile',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './navbarmobile.component.html',
-  styleUrl: './navbarmobile.component.css'
+    selector: 'app-navbarmobile',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './navbarmobile.component.html',
+    styleUrl: './navbarmobile.component.css'
 })
 export class NavbarmobileComponent {
 

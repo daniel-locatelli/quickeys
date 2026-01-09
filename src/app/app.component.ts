@@ -5,15 +5,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarmobileComponent } from './navbarmobile/navbarmobile.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent, NavbarmobileComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  host: {
-    '(window:resize)': 'onWindowResize($event)',
-    '(document:keydown)': 'handleKeyboardEvent($event)',
-  },
+    selector: 'app-root',
+    imports: [CommonModule, RouterOutlet, NavbarComponent, NavbarmobileComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    host: {
+        '(window:resize)': 'onWindowResize($event)',
+        '(document:keydown)': 'handleKeyboardEvent($event)',
+    }
 })
 export class AppComponent {
   // https://angular.dev/guide/components/host-elements

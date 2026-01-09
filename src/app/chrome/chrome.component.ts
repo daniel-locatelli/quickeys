@@ -4,14 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { googleChrome } from '../constants';
 
 @Component({
-  selector: 'app-chrome',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './chrome.component.html',
-  styleUrl: './chrome.component.css',
-  host: {
-    class: 'shortcuts',
-  },
+    selector: 'app-chrome',
+    imports: [CommonModule],
+    templateUrl: './chrome.component.html',
+    styleUrl: './chrome.component.css',
+    host: {
+        class: 'shortcuts',
+    }
 })
 export class ChromeComponent implements AfterViewInit, OnInit {
 

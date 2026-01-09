@@ -4,14 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { afterEffects } from '../constants';
 
 @Component({
-  selector: 'app-aftereffects',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './aftereffects.component.html',
-  styleUrl: './aftereffects.component.css',
-  host: {
-    class: 'shortcuts',
-  },
+    selector: 'app-aftereffects',
+    imports: [CommonModule],
+    templateUrl: './aftereffects.component.html',
+    styleUrl: './aftereffects.component.css',
+    host: {
+        class: 'shortcuts',
+    }
 })
 export class AftereffectsComponent implements AfterViewInit, OnInit {
   constructor(private title: Title, private meta: Meta, private constants: afterEffects) {}

@@ -4,14 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { bash } from '../constants';
 
 @Component({
-  selector: 'app-bash',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './bash.component.html',
-  styleUrl: './bash.component.css',
-  host: {
-    class: 'shortcuts',
-  },
+    selector: 'app-bash',
+    imports: [CommonModule],
+    templateUrl: './bash.component.html',
+    styleUrl: './bash.component.css',
+    host: {
+        class: 'shortcuts',
+    }
 })
 export class BashComponent implements AfterViewInit, OnInit {
 
