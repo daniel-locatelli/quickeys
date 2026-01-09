@@ -1,95 +1,119 @@
 <div class="pageintro" tabIndex="0" #scroll>
- <h1>
+  <h1>
     Shortcuts for
- </h1>
- <svg aria-label="Chrome Dev" class="logo">
-   <use xlink:href="assets/icons.svg#chromedev" />
- </svg>
+  </h1>
+  <svg aria-label="Chrome Dev" class="logo">
+    <use xlink:href="assets/icons.svg#chromedev" />
+  </svg>
 </div>
 <div class="table">
-    <h2 tabIndex="0">Open Dev Tools</h2>
-    <div class="row" *ngFor="let item of openDevTools">
+  <h2 tabIndex="0">Open Dev Tools</h2>
+  @for (item of openDevTools; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Global</h2>
-    <div class="row" *ngFor="let item of global">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Global</h2>
+  @for (item of global; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Elements Panel</h2>
-    <div class="row" *ngFor="let item of elementsPanel">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Elements Panel</h2>
+  @for (item of elementsPanel; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Styles Panel</h2>
-    <div class="row" *ngFor="let item of stylesPanel">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Styles Panel</h2>
+  @for (item of stylesPanel; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Sources Panel</h2>
-    <div class="row" *ngFor="let item of sourcesPanel">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Sources Panel</h2>
+  @for (item of sourcesPanel; track item) {
+    <div class="row">
       <span class="key">{{ item.key }} </span>
       <span class="command">{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Code Editor</h2>
-    <div class="row" *ngFor="let item of codeEditor">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Code Editor</h2>
+  @for (item of codeEditor; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Network Panel</h2>
-    <div class="row" *ngFor="let item of networkPanel">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Network Panel</h2>
+  @for (item of networkPanel; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Performance Panel</h2>
-    <div class="row" *ngFor="let item of performancePanel">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Performance Panel</h2>
+  @for (item of performancePanel; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Memory Panel</h2>
-    <div class="row" *ngFor="let item of memoryPanel">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Memory Panel</h2>
+  @for (item of memoryPanel; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Console Panel</h2>
-    <div class="row" *ngFor="let item of consolePanel">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Console Panel</h2>
+  @for (item of consolePanel; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Search Tab</h2>
-    <div class="row" *ngFor="let item of searchTab">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Search Tab</h2>
+  @for (item of searchTab; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Recorder Panel</h2>
-    <div class="row" *ngFor="let item of recorderPanel">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Recorder Panel</h2>
+  @for (item of recorderPanel; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <a href="https://developer.chrome.com/docs/devtools/shortcuts/" target="_blank" rel="noopener noreferrer"
+  }
+</div>
+<a href="https://developer.chrome.com/docs/devtools/shortcuts/" target="_blank" rel="noopener noreferrer"
   >Go to Google's official page: Chrome DevTools keyboard shortcuts ↗</a
->
+  >

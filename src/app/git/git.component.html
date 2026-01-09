@@ -1,59 +1,73 @@
 <div class="pageintro" tabIndex="0" #scroll>
- <h1>
+  <h1>
     Commands for
- </h1>
- <svg aria-label="git" class="logo">
-   <use xlink:href="assets/icons.svg#git" />
- </svg>
+  </h1>
+  <svg aria-label="git" class="logo">
+    <use xlink:href="assets/icons.svg#git" />
+  </svg>
 </div>
 <div class="table">
   <h2 tabIndex="0">Repository Setup</h2>
-  <div class="row" *ngFor="let item of repositorySetup">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of repositorySetup; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Configuration</h2>
-  <div class="row" *ngFor="let item of configuration">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of configuration; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Basic Snapshotting</h2>
-  <div class="row" *ngFor="let item of basicSnapshotting">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of basicSnapshotting; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Branching And Merging</h2>
-  <div class="row" *ngFor="let item of branchingAndMerging">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of branchingAndMerging; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Remote Repositories</h2>
-  <div class="row" *ngFor="let item of remoteRepositories">
-    <span class="key">{{ item.key }} </span>
-    <span class="command">{{ item.command }}</span>
-  </div>
+  @for (item of remoteRepositories; track item) {
+    <div class="row">
+      <span class="key">{{ item.key }} </span>
+      <span class="command">{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Inspecting Changes</h2>
-  <div class="row" *ngFor="let item of inspectingChanges">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of inspectingChanges; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Undoing Changes</h2>
-  <div class="row" *ngFor="let item of undoingChanges">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of undoingChanges; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <a href="https://git-scm.com/docs/git" target="_blank" rel="noopener noreferrer"
 >Git commands documentation ↗</a>

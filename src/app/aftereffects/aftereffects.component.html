@@ -6,170 +6,218 @@
 </div>
 <div class="table">
   <h2 tabIndex="0">General</h2>
-  <div class="row" *ngFor="let item of general">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of general; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Projects</h2>
-  <div class="row" *ngFor="let item of projects">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of projects; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Preferences</h2>
-  <div class="row" *ngFor="let item of preferences">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of preferences; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Panels, viewers, workspaces, and windows</h2>
-  <div class="row" *ngFor="let item of panelsViewersWorkspacesWindows">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of panelsViewersWorkspacesWindows; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Activate tools</h2>
-  <div class="row" *ngFor="let item of activateTools">
-    <span class="key">{{ item.key }} </span>
-    <span class="command">{{ item.command }}</span>
-  </div>
+  @for (item of activateTools; track item) {
+    <div class="row">
+      <span class="key">{{ item.key }} </span>
+      <span class="command">{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Compositions and the work area</h2>
-  <div class="row" *ngFor="let item of compositionsAndWorkArea">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of compositionsAndWorkArea; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Time navigation</h2>
-  <div class="row" *ngFor="let item of timeNavigation">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of timeNavigation; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Previews</h2>
-  <div class="row" *ngFor="let item of previews">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of previews; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Views</h2>
-  <div class="row" *ngFor="let item of views">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of views; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Footage</h2>
-  <div class="row" *ngFor="let item of footage">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of footage; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Effects and animation presets</h2>
-  <div class="row" *ngFor="let item of effectsAndAnimationPresets">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of effectsAndAnimationPresets; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Layers</h2>
-  <div class="row" *ngFor="let item of layers">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of layers; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Showing properties and groups in the Timeline panel</h2>
-  <div class="row" *ngFor="let item of timelinePanel">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of timelinePanel; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Showing properties in the Effect Controls panel</h2>
-  <div class="row" *ngFor="let item of effectControlsPanel">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of effectControlsPanel; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Modifying layer properties</h2>
-  <div class="row" *ngFor="let item of modifyingLayerProperties">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of modifyingLayerProperties; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">3D layers</h2>
-  <div class="row" *ngFor="let item of threeDLayers">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of threeDLayers; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Keyframes and the Graph Editor</h2>
-  <div class="row" *ngFor="let item of keyframesAndGraphEditor">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of keyframesAndGraphEditor; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Text</h2>
-  <div class="row" *ngFor="let item of textShortcuts">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of textShortcuts; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Masks</h2>
-  <div class="row" *ngFor="let item of masksShortcuts">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of masksShortcuts; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Paint tools</h2>
-  <div class="row" *ngFor="let item of paintToolsShortcuts">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of paintToolsShortcuts; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Shape layers</h2>
-  <div class="row" *ngFor="let item of shapeLayersShortcuts">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of shapeLayersShortcuts; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Markers</h2>
-  <div class="row" *ngFor="let item of markersShortcuts">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of markersShortcuts; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Motion tracking</h2>
-  <div class="row" *ngFor="let item of motionTrackingShortcuts">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of motionTrackingShortcuts; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Saving, exporting, and rendering</h2>
-  <div class="row" *ngFor="let item of savingExportingRenderingShortcuts">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of savingExportingRenderingShortcuts; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <a href="https://helpx.adobe.com/after-effects/using/keyboard-shortcuts-reference.html" target="_blank" rel="noopener noreferrer">Go to Adobe's official page: Keyboard shortcuts in After Effects ↗</a>

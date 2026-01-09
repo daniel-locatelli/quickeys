@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { vsCode } from '../constants';
 
 @Component({
     selector: 'app-vscode',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './vscode.component.html',
     styleUrl: './vscode.component.css',
     host: {

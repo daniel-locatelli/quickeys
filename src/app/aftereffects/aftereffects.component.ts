@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { afterEffects } from '../constants';
 
 @Component({
     selector: 'app-aftereffects',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './aftereffects.component.html',
     styleUrl: './aftereffects.component.css',
     host: {

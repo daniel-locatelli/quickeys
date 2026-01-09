@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { bash } from '../constants';
 
 @Component({
     selector: 'app-bash',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './bash.component.html',
     styleUrl: './bash.component.css',
     host: {

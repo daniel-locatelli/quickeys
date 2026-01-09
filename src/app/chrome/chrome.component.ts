@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { googleChrome } from '../constants';
 
 @Component({
     selector: 'app-chrome',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './chrome.component.html',
     styleUrl: './chrome.component.css',
     host: {

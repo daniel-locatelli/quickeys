@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { windows } from '../constants';
 
 @Component({
     selector: 'app-windows',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './windows.component.html',
     styleUrl: './windows.component.css',
     host: {

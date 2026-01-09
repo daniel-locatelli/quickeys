@@ -1,46 +1,56 @@
 <div class="pageintro" tabIndex="0" #scroll>
- <h1>
+  <h1>
     Shortcuts for
- </h1>
- <svg aria-label="Chrome" class="logo">
-   <use xlink:href="assets/icons.svg#chrome" />
- </svg>
+  </h1>
+  <svg aria-label="Chrome" class="logo">
+    <use xlink:href="assets/icons.svg#chrome" />
+  </svg>
 </div>
 <div class="table">
-    <h2 tabIndex="0">Tab and Window</h2>
-    <div class="row" *ngFor="let item of tabAndWindow">
+  <h2 tabIndex="0">Tab and Window</h2>
+  @for (item of tabAndWindow; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Google Chrome Features</h2>
-    <div class="row" *ngFor="let item of googleChromeFeatures">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Google Chrome Features</h2>
+  @for (item of googleChromeFeatures; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Address Bar</h2>
-    <div class="row" *ngFor="let item of addressBar">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Address Bar</h2>
+  @for (item of addressBar; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Webpage</h2>
-    <div class="row" *ngFor="let item of webpage">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Webpage</h2>
+  @for (item of webpage; track item) {
+    <div class="row">
       <span>{{ item.key }}</span>
       <span>{{ item.command }}</span>
     </div>
-  </div>
-  <div class="table">
-    <h2 tabIndex="0">Mouse</h2>
-    <div class="row" *ngFor="let item of mouse">
+  }
+</div>
+<div class="table">
+  <h2 tabIndex="0">Mouse</h2>
+  @for (item of mouse; track item) {
+    <div class="row">
       <span class="key">{{ item.key }} </span>
       <span class="command">{{ item.command }}</span>
     </div>
-  </div>
-  <a href="https://support.google.com/chrome/answer/157179" target="_blank" rel="noopener noreferrer"
+  }
+</div>
+<a href="https://support.google.com/chrome/answer/157179" target="_blank" rel="noopener noreferrer"
   >Go to Google's official page: Chrome keyboard shortcuts ↗</a
->
+  >

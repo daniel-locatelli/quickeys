@@ -6,74 +6,94 @@
 </div>
 <div class="table">
   <h2 tabIndex="0">Navigation</h2>
-  <div class="row" *ngFor="let item of navigation">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of navigation; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">File Operations</h2>
-  <div class="row" *ngFor="let item of fileOperations">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of fileOperations; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Text Manipulation</h2>
-  <div class="row" *ngFor="let item of textManipulation">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of textManipulation; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">File Viewing</h2>
-  <div class="row" *ngFor="let item of fileViewing">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of fileViewing; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">System Information</h2>
-  <div class="row" *ngFor="let item of systemInformation">
-    <span class="key">{{ item.key }} </span>
-    <span class="command">{{ item.command }}</span>
-  </div>
+  @for (item of systemInformation; track item) {
+    <div class="row">
+      <span class="key">{{ item.key }} </span>
+      <span class="command">{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Process Management</h2>
-  <div class="row" *ngFor="let item of processManagement">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of processManagement; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Networking</h2>
-  <div class="row" *ngFor="let item of networking">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of networking; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Permissions</h2>
-  <div class="row" *ngFor="let item of permissions">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of permissions; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Compression And Archiving</h2>
-  <div class="row" *ngFor="let item of compressionAndArchiving">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of compressionAndArchiving; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Shell Scripting</h2>
-  <div class="row" *ngFor="let item of shellScripting">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of shellScripting; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <a href="https://www.gnu.org/software/bash/manual/bash.html" target="_blank" rel="noopener noreferrer"
   >Go to GNU's official page: Bash Reference Manual ↗</a
->
+  >

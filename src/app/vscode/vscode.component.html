@@ -1,87 +1,109 @@
 <div class="pageintro" tabIndex="0" #scroll>
- <h1>
+  <h1>
     Shortcuts for
- </h1>
- <svg aria-label="VS Code" class="logo">
-   <use xlink:href="assets/icons.svg#vscode" />
- </svg>
+  </h1>
+  <svg aria-label="VS Code" class="logo">
+    <use xlink:href="assets/icons.svg#vscode" />
+  </svg>
 </div>
 <div class="table">
   <h2  tabIndex="0">General</h2>
-  <div class="row" *ngFor="let item of general">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of general; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Basic Editing</h2>
-  <div class="row" *ngFor="let item of basicEditing">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of basicEditing; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Navigation</h2>
-  <div class="row" *ngFor="let item of navigation">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of navigation; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Search And Replace</h2>
-  <div class="row" *ngFor="let item of searchAndReplace">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of searchAndReplace; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Multi Cursor And Selection</h2>
-  <div class="row" *ngFor="let item of multiCursorAndSelection">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of multiCursorAndSelection; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Rich Languages Editing</h2>
-  <div class="row" *ngFor="let item of richLanguagesEditing">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of richLanguagesEditing; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Editor Management</h2>
-  <div class="row" *ngFor="let item of editorManagement">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of editorManagement; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">File Management</h2>
-  <div class="row" *ngFor="let item of editorManagement">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of editorManagement; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Display</h2>
-  <div class="row" *ngFor="let item of display">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of display; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Debug</h2>
-  <div class="row" *ngFor="let item of debug">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of debug; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2  tabIndex="0">Integrated Terminal</h2>
-  <div class="row" *ngFor="let item of integratedTerminal">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of integratedTerminal; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener noreferrer"
 >Go to Microsoft's official page: Key Bindings for Visual Studio Code ↗</a>

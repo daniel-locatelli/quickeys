@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { premierePro } from '../constants';
 
 @Component({
     selector: 'app-premierepro',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './premierepro.component.html',
     styleUrl: './premierepro.component.css',
     host: {

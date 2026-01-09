@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-navbarmobile',
-    imports: [CommonModule, RouterModule],
+    imports: [RouterModule],
     templateUrl: './navbarmobile.component.html',
     styleUrl: './navbarmobile.component.css'
 })

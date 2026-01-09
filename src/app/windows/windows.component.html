@@ -6,60 +6,76 @@
 </div>
 <div class="table">
   <h2 tabIndex="0">General</h2>
-  <div class="row" *ngFor="let item of general">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of general; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Windows Logo</h2>
-  <div class="row" *ngFor="let item of windowsLogo">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of windowsLogo; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Command Prompt</h2>
-  <div class="row" *ngFor="let item of commandPrompt">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of commandPrompt; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Dialog Box</h2>
-  <div class="row" *ngFor="let item of dialogBox">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of dialogBox; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">File Explorer</h2>
-  <div class="row" *ngFor="let item of fileExplorer">
-    <span class="key">{{ item.key }} </span>
-    <span class="command">{{ item.command }}</span>
-  </div>
+  @for (item of fileExplorer; track item) {
+    <div class="row">
+      <span class="key">{{ item.key }} </span>
+      <span class="command">{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Virtual Desktops</h2>
-  <div class="row" *ngFor="let item of virtualDesktops">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of virtualDesktops; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Taskbar</h2>
-  <div class="row" *ngFor="let item of taskbar">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of taskbar; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <div class="table">
   <h2 tabIndex="0">Settings</h2>
-  <div class="row" *ngFor="let item of settings">
-    <span>{{ item.key }}</span>
-    <span>{{ item.command }}</span>
-  </div>
+  @for (item of settings; track item) {
+    <div class="row">
+      <span>{{ item.key }}</span>
+      <span>{{ item.command }}</span>
+    </div>
+  }
 </div>
 <a href="https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec" target="_blank" rel="noopener noreferrer"
   >Go to Microsoft's official page: Keyboard shortcuts in Windows ↗</a
->
+  >

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { git } from '../constants';
 
 @Component({
     selector: 'app-git',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './git.component.html',
     styleUrl: './git.component.css',
     host: {

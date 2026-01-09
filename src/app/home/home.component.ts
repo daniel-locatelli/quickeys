@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { home } from '../constants';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-home',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
     host: {
