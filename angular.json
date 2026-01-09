@@ -62,6 +62,10 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "host": "localhost",
+            "port": 4200
+          },
           "configurations": {
             "production": {
               "buildTarget": "quickeys:build:production"
@@ -124,5 +128,8 @@
     "@schematics/angular:resolver": {
       "typeSeparator": "."
     }
+  },
+  "cli": {
+    "analytics": "1671752c-c60e-4d81-89f2-2b26b822510b"
   }
 }
