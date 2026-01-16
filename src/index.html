@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+    <!-- Loading Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet" />
+
     <!-- Global Metadata -->
     <meta charset="utf-8" />
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    
+
     <!-- Primary Meta Tags -->
     <title>Quickeys</title>
     <meta name="title" content="Quickeys" />
-    <meta name="description" content="Quickeys helps devs find shortcuts and commands without ever leaving the keyboard. It is useful especially for new devs that are still reaching for the mouse more than they should." />
+    <meta
+      name="description"
+      content="Quickeys helps devs find shortcuts and commands without ever leaving the keyboard. It is useful especially for new devs that are still reaching for the mouse more than they should."
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://quickeys.dev" />
     <meta property="og:title" content="Quickeys" />
-    <meta property="og:description" content="Quickeys helps devs find shortcuts and commands without ever leaving the keyboard. It is useful especially for new devs that are still reaching for the mouse more than they should." />
+    <meta
+      property="og:description"
+      content="Quickeys helps devs find shortcuts and commands without ever leaving the keyboard. It is useful especially for new devs that are still reaching for the mouse more than they should."
+    />
     <meta property="og:image" content="src/assets/quickeys-logo-100.png" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="Quickeys helps devs find shortcuts and commands without ever leaving the keyboard." />
+    <meta
+      property="twitter:card"
+      content="Quickeys helps devs find shortcuts and commands without ever leaving the keyboard."
+    />
     <meta property="twitter:url" content="https://quickeys.dev" />
     <meta property="twitter:title" content="Quickeys" />
-    <meta property="twitter:description" content="Quickeys helps devs find shortcuts and commands without ever leaving the keyboard. It is useful especially for new devs that are still reaching for the mouse more than they should." />
+    <meta
+      property="twitter:description"
+      content="Quickeys helps devs find shortcuts and commands without ever leaving the keyboard. It is useful especially for new devs that are still reaching for the mouse more than they should."
+    />
     <meta property="twitter:image" content="src/assets/quickeys-logo-100.png" />
   </head>
   <body>
-    <app-root></app-root>
+    <app-root>
+      <style>
+        .app-loading {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          background-color: var(--bg-primary);
+        }
+      </style>
+      <div class="app-loading">
+        <!-- Optional: Add a spinner here -->
+      </div>
+    </app-root>
   </body>
 </html>
