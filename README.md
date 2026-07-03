@@ -1,3 +1,5 @@
+⚠️ Moved to https://gitlab.com/daniellocatelli/quickeys
+
 # Quickey
 A web app to display common shortcuts for a keyboard-only dev experience.
 
